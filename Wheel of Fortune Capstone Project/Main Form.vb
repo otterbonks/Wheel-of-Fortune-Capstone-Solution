@@ -16,9 +16,7 @@ Public Class frmMain
 
     Private Async Sub btnSpin_Click(sender As Object, e As EventArgs) Handles btnSpin.Click
         result = CInt((24 * Rnd()) + 1)
-        Label1.Text = result.ToString
         Timer1.Start()
-
     End Sub
 
     Private Async Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
