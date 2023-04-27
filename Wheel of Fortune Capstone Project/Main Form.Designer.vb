@@ -26,8 +26,9 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.WheelImages = New System.Windows.Forms.ImageList(Me.components)
         Me.picWheel = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSpin = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picWheel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,44 +60,65 @@ Partial Class frmMain
         Me.WheelImages.Images.SetKeyName(21, "wheel22.png")
         Me.WheelImages.Images.SetKeyName(22, "wheel23.png")
         Me.WheelImages.Images.SetKeyName(23, "wheel24.png")
+        Me.WheelImages.Images.SetKeyName(24, "Wheel25.png")
         '
         'picWheel
         '
-        Me.picWheel.Location = New System.Drawing.Point(520, 172)
+        Me.picWheel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picWheel.Image = Global.Wheel_of_Fortune_Capstone_Project.My.Resources.Resources.wheel1
+        Me.picWheel.Location = New System.Drawing.Point(629, 213)
+        Me.picWheel.Margin = New System.Windows.Forms.Padding(4)
         Me.picWheel.Name = "picWheel"
-        Me.picWheel.Size = New System.Drawing.Size(500, 500)
+        Me.picWheel.Size = New System.Drawing.Size(667, 615)
         Me.picWheel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picWheel.TabIndex = 0
         Me.picWheel.TabStop = False
         '
-        'Button1
+        'btnSpin
         '
-        Me.Button1.Location = New System.Drawing.Point(342, 272)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSpin.Location = New System.Drawing.Point(456, 335)
+        Me.btnSpin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSpin.Name = "btnSpin"
+        Me.btnSpin.Size = New System.Drawing.Size(100, 28)
+        Me.btnSpin.TabIndex = 1
+        Me.btnSpin.Text = "&Spin"
+        Me.btnSpin.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(507, 94)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(48, 16)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Label1"
+        '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1540, 845)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1924, 1040)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnSpin)
         Me.Controls.Add(Me.picWheel)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmMain"
         Me.Text = "Wheel of Fortune"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.picWheel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents WheelImages As ImageList
     Friend WithEvents picWheel As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSpin As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
 End Class
