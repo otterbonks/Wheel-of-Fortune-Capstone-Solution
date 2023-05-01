@@ -9,7 +9,7 @@ Public Class frmMain
     Dim wheelstate As Integer = 1
     Dim wheelspin As Integer
     Dim result As Integer
-    Dim wheelspeed As Integer = 40
+    Dim wheelspeed As Integer = 50
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
         Timer1.Interval = wheelspeed
