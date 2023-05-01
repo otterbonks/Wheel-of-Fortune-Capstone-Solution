@@ -34,6 +34,7 @@ Public Class frmMain
             seconds = 0
             If wheelspin = 3 AndAlso wheelstate = result Then
                 Timer1.Stop()
+                wheelspin = 0
             End If
         End If
 
