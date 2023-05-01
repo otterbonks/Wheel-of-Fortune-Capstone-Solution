@@ -30,11 +30,11 @@ Public Class frmMain
                 wheelstate += 1
             ElseIf wheelstate > 24 Then
                 wheelspin += 1
+                wheelspeed += 40
                 wheelstate = 0
                 picWheel.Image = WheelImages.Images(wheelstate)
             End If
             seconds = 0
-            wheelspeed += 3
             If wheelspin = 2 AndAlso wheelstate = result Then
                 Timer1.Stop()
                 wheelspin = 0
@@ -45,5 +45,30 @@ Public Class frmMain
 
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
 
+
+        Dim Open As New OpenFileDialog()
+        'it is declared as System input and output Streamreader
+        'it reads characters from a byte stream in a particular encoding
+        Dim myStreamReader As System.IO.StreamReader
+        'in an open dialog box, it will give an opening filter for the current filenames,
+        'or the save file types.   
+        Open.Filter = "Text [*.txt*]|*.txt|All Files [*.*]|*.*"
+        'it checks if the file exists or not
+        Open.CheckFileExists = True
+        'sets the openfile dialog name as "OpenFile"
+        Open.Title = "OpenFile"
+        Open.ShowDialog(Me)
+
+        Try
+            'it opens the selected file by the user
+            Open.OpenFile()
+            'opens the existing file
+            myStreamReader = System.IO.File.OpenText(Open.FileName)
+            'it reads the streams from current position to the end of position and display the result to RichTextBox as Text
+            RichTextBox1.Text = myStreamReader.ReadToEnd()
+        Catch ex As Exception
+            'it will catch if any errors occurs
+            MsgBox(ex.Message, MsgBoxStyle.Information)
+        End Try
     End Sub
 End Class
