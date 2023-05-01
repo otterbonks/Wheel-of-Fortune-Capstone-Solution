@@ -65,7 +65,7 @@ Public Class frmMain
             'opens the existing file
             myStreamReader = System.IO.File.OpenText(Open.FileName)
             'it reads the streams from current position to the end of position and display the result to RichTextBox as Text
-            RichTextBox1.Text = myStreamReader.ReadToEnd()
+
         Catch ex As Exception
             'it will catch if any errors occurs
             MsgBox(ex.Message, MsgBoxStyle.Information)
