@@ -29,10 +29,10 @@ Public Class frmMain
                 picWheel.Image = WheelImages.Images(wheelstate)
                 wheelstate += 1
             ElseIf wheelstate > 24 Then
+                picWheel.Image = WheelImages.Images(0)
+                wheelstate = 0
                 wheelspin += 1
                 wheelspeed += 40
-                wheelstate = 0
-                picWheel.Image = WheelImages.Images(wheelstate)
             End If
             seconds = 0
             If wheelspin = 2 AndAlso wheelstate = result Then
