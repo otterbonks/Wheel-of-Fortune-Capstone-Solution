@@ -9,20 +9,21 @@ Public Class frmMain
     Dim wheelstate As Integer = 1
     Dim wheelspin As Integer
     Dim result As Integer
-    Dim wheelspeed As Integer = 40
+    Dim wheelspeed As Integer = 20
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
-        Timer1.Interval = wheelspeed
+
     End Sub
 
     Private Async Sub btnSpin_Click(sender As Object, e As EventArgs) Handles btnSpin.Click
         result = CInt((24 * Rnd()) + 1)
         Timer1.Start()
+        wheelspeed = 20
     End Sub
 
     Private Async Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         seconds += 1
-
+        Timer1.Interval = wheelspeed
         If seconds = 1 Then
             If wheelstate <= 24 Then
                 picWheel.Image = WheelImages.Images(wheelstate)
@@ -33,7 +34,8 @@ Public Class frmMain
                 picWheel.Image = WheelImages.Images(wheelstate)
             End If
             seconds = 0
-            If wheelspin = 3 AndAlso wheelstate = result Then
+            wheelspeed += 3
+            If wheelspin = 2 AndAlso wheelstate = result Then
                 Timer1.Stop()
                 wheelspin = 0
             End If
