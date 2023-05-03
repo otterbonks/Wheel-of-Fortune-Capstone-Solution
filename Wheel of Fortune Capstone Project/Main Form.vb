@@ -4,6 +4,7 @@
 Option Strict On
 Option Explicit On
 Option Infer Off
+Imports System.IO
 Public Class frmMain
     Dim seconds As Integer
     Dim wheelstate As Integer = 1
@@ -12,7 +13,7 @@ Public Class frmMain
     Dim wheelspeed As Integer = 20
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
-
+        lblRandWord.Text = String.Empty
     End Sub
 
     Private Async Sub btnSpin_Click(sender As Object, e As EventArgs) Handles btnSpin.Click
@@ -60,12 +61,21 @@ Public Class frmMain
         Open.ShowDialog(Me)
 
         Try
-            'it opens the selected file by the user
-            Open.OpenFile()
-            'opens the existing file
-            myStreamReader = System.IO.File.OpenText(Open.FileName)
-            'it reads the streams from current position to the end of position and display the result to RichTextBox as Text
 
+            Open.OpenFile()
+
+            myStreamReader = System.IO.File.OpenText(Open.FileName)
+
+            For Each line As String In File.ReadAllLines(Open.FileName)
+                lstRandWords.Items.Add(line)
+            Next
+
+            Dim ranIndex As Integer = CInt(lstRandWords.Items.Count * Rnd() + 1)
+            Dim ranWord As String = lstRandWords.Items(ranIndex).ToString.Trim.ToUpper
+
+            For Each c As Char In ranWord
+                lblRandWord.Text += "- "
+            Next
         Catch ex As Exception
             'it will catch if any errors occurs
             MsgBox(ex.Message, MsgBoxStyle.Information)
