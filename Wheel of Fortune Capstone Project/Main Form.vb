@@ -93,7 +93,9 @@ Public Class frmMain
         If ranWord.Contains(txtPlay1Guess.Text.ToUpper) Then
             For Each c As Char In tempWord
                 If tempWord.IndexOf(c.ToString) = (ranWord.IndexOf(txtPlay1Guess.Text.ToUpper) * 2) Then
-                    tempWord = tempWord.Replace(c.ToString, txtPlay1Guess.Text.ToUpper)
+                    tempWord = tempWord.Remove(ranWord.IndexOf(txtPlay1Guess.Text.ToUpper), 1)
+                    tempWord = tempWord.Insert(ranWord.IndexOf(txtPlay1Guess.Text.ToUpper) * 2, txtPlay1Guess.Text.ToUpper)
+                    'tempWord = tempWord.Replace(c.ToString, txtPlay1Guess.Text.ToUpper)
                 End If
             Next
         Else
