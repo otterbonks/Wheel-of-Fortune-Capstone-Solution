@@ -1,11 +1,3 @@
-david
-mom
 dog
-africa
-asia
-noodles
-duck
-watermelon
-fried chicken
-rice
-osscar
+cat
+fish

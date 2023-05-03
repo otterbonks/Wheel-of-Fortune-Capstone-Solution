@@ -11,6 +11,10 @@ Public Class frmMain
     Dim wheelspin As Integer
     Dim result As Integer
     Dim wheelspeed As Integer = 20
+
+    Dim ranIndex As Integer
+    Dim ranWord As String
+    Dim tempWord As String
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
         lblRandWord.Text = String.Empty
@@ -70,15 +74,33 @@ Public Class frmMain
                 lstRandWords.Items.Add(line)
             Next
 
-            Dim ranIndex As Integer = CInt(lstRandWords.Items.Count * Rnd() + 1)
-            Dim ranWord As String = lstRandWords.Items(ranIndex).ToString.Trim.ToUpper
+            ranIndex = CInt(lstRandWords.Items.Count * Rnd())
+            ranWord = lstRandWords.Items(ranIndex).ToString.Trim.ToUpper
 
             For Each c As Char In ranWord
-                lblRandWord.Text += "- "
+                tempWord += "- "
             Next
+
+            lblRandWord.Text = tempWord
         Catch ex As Exception
             'it will catch if any errors occurs
             MsgBox(ex.Message, MsgBoxStyle.Information)
         End Try
+    End Sub
+
+    Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
+
+        If ranWord.Contains(txtPlay1Guess.Text.ToUpper) Then
+            For Each c As Char In tempWord
+                If tempWord.IndexOf(c.ToString) = (ranWord.IndexOf(txtPlay1Guess.Text.ToUpper) * 2) Then
+                    tempWord = tempWord.Replace(c.ToString, txtPlay1Guess.Text.ToUpper)
+                End If
+            Next
+        Else
+            MsgBox("noooo")
+        End If
+
+        lblRandWord.Text = tempWord
+
     End Sub
 End Class
