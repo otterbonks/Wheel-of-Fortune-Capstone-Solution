@@ -334,7 +334,7 @@ Partial Class frmMain
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkGoldenrod
-        Me.Label16.Location = New System.Drawing.Point(311, 636)
+        Me.Label16.Location = New System.Drawing.Point(300, 588)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(30, 20)
