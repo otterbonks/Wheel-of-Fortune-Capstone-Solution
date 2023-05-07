@@ -80,12 +80,14 @@ Public Class frmMain
                 outputWord += "- "
             Next
             lblRandWord.Text = outputWord
+            For Each ctrl As Control In grpLetters.Controls
+                ctrl.Enabled = True
+            Next
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Information)
         End Try
     End Sub
     Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
-
         If ranWord.Contains(txtPlay1Guess.Text.ToUpper) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
                 If tempWord(intIndex) = txtPlay1Guess.Text.ToUpper Then
@@ -100,4 +102,23 @@ Public Class frmMain
         lblRandWord.Text = outputWord
     End Sub
 
+    Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click, btnB.Click, btnC.Click, btnD.Click, btnE.Click, btnF.Click, btnG.Click, btnH.Click, btnI.Click, btnJ.Click, btnK.Click, btnL.Click, btnM.Click, btnN.Click, btnO.Click, btnP.Click, btnQ.Click, btnR.Click, btnS.Click, btnT.Click, btnU.Click, btnV.Click, btnW.Click, btnX.Click, btnY.Click, btnZ.Click
+        Dim guessedLetter As Button = DirectCast(sender, Button)
+        If ranWord.Contains(guessedLetter.Text) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = guessedLetter.Text Then
+                    outputWord = outputWord.Insert(intIndex, guessedLetter.Text)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+            guessedLetter.BackColor = Color.Lime
+        Else
+            guessedLetter.BackColor = Color.Red
+        End If
+        guessedLetter.Enabled = False
+        lblRandWord.Text = outputWord
+    End Sub
 End Class
