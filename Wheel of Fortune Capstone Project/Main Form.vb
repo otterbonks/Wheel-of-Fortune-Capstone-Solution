@@ -5,6 +5,7 @@ Option Strict On
 Option Explicit On
 Option Infer Off
 Imports System.IO
+
 Public Class frmMain
     Dim seconds As Integer
     Dim wheelstate As Integer = 1
@@ -15,6 +16,7 @@ Public Class frmMain
     Dim ranIndex As Integer
     Dim ranWord As String
     Dim tempWord As String
+    Dim outputWord As String
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
         lblRandWord.Text = String.Empty
@@ -47,25 +49,21 @@ Public Class frmMain
         End If
 
     End Sub
-
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
-
+    Private Sub menuLoad_Click(sender As Object, e As EventArgs) Handles menuLoad.Click
+        lblRandWord.Text = String.Empty
+        ranWord = String.Empty
+        tempWord = String.Empty
+        outputWord = String.Empty
+        lstRandWords.Items.Clear()
 
         Dim Open As New OpenFileDialog()
-        'it is declared as System input and output Streamreader
-        'it reads characters from a byte stream in a particular encoding
         Dim myStreamReader As System.IO.StreamReader
-        'in an open dialog box, it will give an opening filter for the current filenames,
-        'or the save file types.   
         Open.Filter = "Text [*.txt*]|*.txt|All Files [*.*]|*.*"
-        'it checks if the file exists or not
         Open.CheckFileExists = True
-        'sets the openfile dialog name as "OpenFile"
         Open.Title = "OpenFile"
         Open.ShowDialog(Me)
 
         Try
-
             Open.OpenFile()
 
             myStreamReader = System.IO.File.OpenText(Open.FileName)
@@ -78,31 +76,28 @@ Public Class frmMain
             ranWord = lstRandWords.Items(ranIndex).ToString.Trim.ToUpper
 
             For Each c As Char In ranWord
-                tempWord += "- "
+                tempWord += c + " "
+                outputWord += "- "
             Next
-
-            lblRandWord.Text = tempWord
+            lblRandWord.Text = outputWord
         Catch ex As Exception
-            'it will catch if any errors occurs
             MsgBox(ex.Message, MsgBoxStyle.Information)
         End Try
     End Sub
-
     Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
 
         If ranWord.Contains(txtPlay1Guess.Text.ToUpper) Then
-            For Each c As Char In tempWord
-                If tempWord.IndexOf(c.ToString) = (ranWord.IndexOf(txtPlay1Guess.Text.ToUpper) * 2) Then
-                    tempWord = tempWord.Remove(ranWord.IndexOf(txtPlay1Guess.Text.ToUpper), 1)
-                    tempWord = tempWord.Insert(ranWord.IndexOf(txtPlay1Guess.Text.ToUpper) * 2, txtPlay1Guess.Text.ToUpper)
-                    'tempWord = tempWord.Replace(c.ToString, txtPlay1Guess.Text.ToUpper)
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtPlay1Guess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtPlay1Guess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
                 End If
             Next
-        Else
-            MsgBox("noooo")
         End If
-
-        lblRandWord.Text = tempWord
-
+        lblRandWord.Text = outputWord
     End Sub
+
 End Class
