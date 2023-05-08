@@ -17,6 +17,9 @@ Public Class frmMain
     Dim ranWord As String
     Dim tempWord As String
     Dim outputWord As String
+
+    Dim play1Score As Integer
+    Dim play2Score As Integer
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
         lblRandWord.Text = String.Empty
@@ -45,6 +48,22 @@ Public Class frmMain
             If wheelspin = 2 AndAlso wheelstate = result Then
                 Timer1.Stop()
                 wheelspin = 0
+                For Each ctrl As Control In grpLetters.Controls
+                    ctrl.Enabled = True
+                Next
+                Select Case result
+                    Case Is = 1
+                        play1Score += 10000
+                    Case Is = 0, 2
+                        play1Score = 0
+                    Case Is = 8, 18
+                        play1Score += 5000
+                    Case Is = 5, 12, 15, 21, 22
+                        play1Score += 2000
+                    Case Else
+                        play1Score += 1000
+                End Select
+                lblPlay1Score.Text = play1Score.ToString
             End If
         End If
 
@@ -80,9 +99,7 @@ Public Class frmMain
                 outputWord += "- "
             Next
             lblRandWord.Text = outputWord
-            For Each ctrl As Control In grpLetters.Controls
-                ctrl.Enabled = True
-            Next
+            btnSpin.Enabled = True
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Information)
         End Try
@@ -104,6 +121,7 @@ Public Class frmMain
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click, btnB.Click, btnC.Click, btnD.Click, btnE.Click, btnF.Click, btnG.Click, btnH.Click, btnI.Click, btnJ.Click, btnK.Click, btnL.Click, btnM.Click, btnN.Click, btnO.Click, btnP.Click, btnQ.Click, btnR.Click, btnS.Click, btnT.Click, btnU.Click, btnV.Click, btnW.Click, btnX.Click, btnY.Click, btnZ.Click
         Dim guessedLetter As Button = DirectCast(sender, Button)
+
         If ranWord.Contains(guessedLetter.Text) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
                 If tempWord(intIndex) = guessedLetter.Text Then
@@ -117,6 +135,9 @@ Public Class frmMain
             guessedLetter.BackColor = Color.Lime
         Else
             guessedLetter.BackColor = Color.Red
+            For Each ctrl As Control In grpLetters.Controls
+                ctrl.Enabled = False
+            Next
         End If
         guessedLetter.Enabled = False
         lblRandWord.Text = outputWord

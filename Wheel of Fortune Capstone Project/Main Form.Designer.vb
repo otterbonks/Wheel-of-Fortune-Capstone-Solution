@@ -25,7 +25,6 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.WheelImages = New System.Windows.Forms.ImageList(Me.components)
-        Me.picWheel = New System.Windows.Forms.PictureBox()
         Me.btnSpin = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
@@ -87,9 +86,11 @@ Partial Class frmMain
         Me.btnZ = New System.Windows.Forms.Button()
         Me.btnY = New System.Windows.Forms.Button()
         Me.grpLetters = New System.Windows.Forms.GroupBox()
-        CType(Me.picWheel, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lblPlay1Score = New System.Windows.Forms.Label()
+        Me.picWheel = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         Me.grpLetters.SuspendLayout()
+        CType(Me.picWheel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'WheelImages
@@ -122,21 +123,9 @@ Partial Class frmMain
         Me.WheelImages.Images.SetKeyName(23, "wheel24.png")
         Me.WheelImages.Images.SetKeyName(24, "Wheel25.png")
         '
-        'picWheel
-        '
-        Me.picWheel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picWheel.Image = Global.Wheel_of_Fortune_Capstone_Project.My.Resources.Resources.wheel1
-        Me.picWheel.Location = New System.Drawing.Point(12, 42)
-        Me.picWheel.Name = "picWheel"
-        Me.picWheel.Size = New System.Drawing.Size(599, 582)
-        Me.picWheel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picWheel.TabIndex = 0
-        Me.picWheel.TabStop = False
-        '
         'btnSpin
         '
+        Me.btnSpin.Enabled = False
         Me.btnSpin.Location = New System.Drawing.Point(858, 240)
         Me.btnSpin.Name = "btnSpin"
         Me.btnSpin.Size = New System.Drawing.Size(75, 23)
@@ -496,7 +485,7 @@ Partial Class frmMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1453, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1370, 24)
         Me.MenuStrip1.TabIndex = 32
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -834,11 +823,34 @@ Partial Class frmMain
         Me.grpLetters.TabStop = False
         Me.grpLetters.Text = "Guess a Letter"
         '
+        'lblPlay1Score
+        '
+        Me.lblPlay1Score.AutoSize = True
+        Me.lblPlay1Score.Location = New System.Drawing.Point(630, 199)
+        Me.lblPlay1Score.Name = "lblPlay1Score"
+        Me.lblPlay1Score.Size = New System.Drawing.Size(51, 13)
+        Me.lblPlay1Score.TabIndex = 60
+        Me.lblPlay1Score.Text = "P1 Score"
+        '
+        'picWheel
+        '
+        Me.picWheel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picWheel.Image = Global.Wheel_of_Fortune_Capstone_Project.My.Resources.Resources.wheel22
+        Me.picWheel.Location = New System.Drawing.Point(20, 46)
+        Me.picWheel.Name = "picWheel"
+        Me.picWheel.Size = New System.Drawing.Size(585, 582)
+        Me.picWheel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picWheel.TabIndex = 0
+        Me.picWheel.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1453, 689)
+        Me.ClientSize = New System.Drawing.Size(1370, 689)
+        Me.Controls.Add(Me.lblPlay1Score)
         Me.Controls.Add(Me.grpLetters)
         Me.Controls.Add(Me.btnGuess)
         Me.Controls.Add(Me.lstRandWords)
@@ -875,10 +887,10 @@ Partial Class frmMain
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMain"
         Me.Text = "Wheel of Fortune"
-        CType(Me.picWheel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.grpLetters.ResumeLayout(False)
+        CType(Me.picWheel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -947,4 +959,5 @@ Partial Class frmMain
     Friend WithEvents btnZ As Button
     Friend WithEvents btnY As Button
     Friend WithEvents grpLetters As GroupBox
+    Friend WithEvents lblPlay1Score As Label
 End Class
