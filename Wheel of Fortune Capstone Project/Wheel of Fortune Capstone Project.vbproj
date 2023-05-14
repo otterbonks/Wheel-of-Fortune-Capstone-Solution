@@ -123,5 +123,77 @@
   <ItemGroup>
     <None Include="Resources\wheel1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wheel25.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
