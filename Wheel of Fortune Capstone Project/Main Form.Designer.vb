@@ -879,7 +879,7 @@ Partial Class frmMain
         '
         Me.lblPlayerOneScore.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.lblPlayerOneScore.Font = New System.Drawing.Font("Impact", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayerOneScore.Location = New System.Drawing.Point(10, 54)
+        Me.lblPlayerOneScore.Location = New System.Drawing.Point(8, 54)
         Me.lblPlayerOneScore.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPlayerOneScore.Name = "lblPlayerOneScore"
         Me.lblPlayerOneScore.Size = New System.Drawing.Size(231, 115)
