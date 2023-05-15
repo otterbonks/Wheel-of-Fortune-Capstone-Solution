@@ -150,7 +150,7 @@ Partial Class frmMain
         'btnSpin
         '
         Me.btnSpin.Enabled = False
-        Me.btnSpin.Location = New System.Drawing.Point(1144, 314)
+        Me.btnSpin.Location = New System.Drawing.Point(954, 328)
         Me.btnSpin.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.btnSpin.Name = "btnSpin"
         Me.btnSpin.Size = New System.Drawing.Size(101, 30)
@@ -168,7 +168,7 @@ Partial Class frmMain
         Me.Label1.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label1.Location = New System.Drawing.Point(344, 80)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 20)
+        Me.Label1.Size = New System.Drawing.Size(51, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "10K"
         '
@@ -179,7 +179,7 @@ Partial Class frmMain
         Me.Label2.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label2.Location = New System.Drawing.Point(419, 89)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(74, 13)
+        Me.Label2.Size = New System.Drawing.Size(89, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "BANKRUPT"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -191,7 +191,7 @@ Partial Class frmMain
         Me.Label3.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label3.Location = New System.Drawing.Point(232, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 13)
+        Me.Label3.Size = New System.Drawing.Size(89, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "BANKRUPT"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -203,7 +203,7 @@ Partial Class frmMain
         Me.Label4.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label4.Location = New System.Drawing.Point(55, 370)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 20)
+        Me.Label4.Size = New System.Drawing.Size(39, 25)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "2K"
         '
@@ -214,7 +214,7 @@ Partial Class frmMain
         Me.Label5.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label5.Location = New System.Drawing.Point(523, 109)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(30, 20)
+        Me.Label5.Size = New System.Drawing.Size(39, 25)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "1K"
         '
@@ -225,7 +225,7 @@ Partial Class frmMain
         Me.Label6.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label6.Location = New System.Drawing.Point(597, 149)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 20)
+        Me.Label6.Size = New System.Drawing.Size(39, 25)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "1K"
         '
@@ -236,7 +236,7 @@ Partial Class frmMain
         Me.Label7.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label7.Location = New System.Drawing.Point(661, 221)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(30, 20)
+        Me.Label7.Size = New System.Drawing.Size(39, 25)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "2K"
         '
@@ -247,7 +247,7 @@ Partial Class frmMain
         Me.Label8.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label8.Location = New System.Drawing.Point(711, 292)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(30, 20)
+        Me.Label8.Size = New System.Drawing.Size(39, 25)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "1K"
         '
@@ -258,7 +258,7 @@ Partial Class frmMain
         Me.Label9.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label9.Location = New System.Drawing.Point(133, 221)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(30, 20)
+        Me.Label9.Size = New System.Drawing.Size(39, 25)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = "1K"
         '
@@ -269,7 +269,7 @@ Partial Class frmMain
         Me.Label10.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label10.Location = New System.Drawing.Point(187, 149)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(30, 20)
+        Me.Label10.Size = New System.Drawing.Size(39, 25)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "1K"
         '
@@ -280,7 +280,7 @@ Partial Class frmMain
         Me.Label11.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label11.Location = New System.Drawing.Point(80, 292)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(30, 20)
+        Me.Label11.Size = New System.Drawing.Size(39, 25)
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "2K"
         '
@@ -291,7 +291,7 @@ Partial Class frmMain
         Me.Label12.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label12.Location = New System.Drawing.Point(55, 454)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(30, 20)
+        Me.Label12.Size = New System.Drawing.Size(39, 25)
         Me.Label12.TabIndex = 13
         Me.Label12.Text = "1K"
         '
@@ -302,7 +302,7 @@ Partial Class frmMain
         Me.Label13.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label13.Location = New System.Drawing.Point(115, 604)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(30, 20)
+        Me.Label13.Size = New System.Drawing.Size(39, 25)
         Me.Label13.TabIndex = 14
         Me.Label13.Text = "5K"
         '
@@ -313,7 +313,7 @@ Partial Class frmMain
         Me.Label14.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label14.Location = New System.Drawing.Point(55, 531)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(49, 20)
+        Me.Label14.Size = New System.Drawing.Size(62, 25)
         Me.Label14.TabIndex = 15
         Me.Label14.Text = "SKIP"
         '
@@ -324,7 +324,7 @@ Partial Class frmMain
         Me.Label15.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label15.Location = New System.Drawing.Point(163, 664)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(49, 20)
+        Me.Label15.Size = New System.Drawing.Size(62, 25)
         Me.Label15.TabIndex = 16
         Me.Label15.Text = "SKIP"
         '
@@ -335,7 +335,7 @@ Partial Class frmMain
         Me.Label16.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label16.Location = New System.Drawing.Point(400, 769)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(30, 20)
+        Me.Label16.Size = New System.Drawing.Size(39, 25)
         Me.Label16.TabIndex = 17
         Me.Label16.Text = "1K"
         '
@@ -346,7 +346,7 @@ Partial Class frmMain
         Me.Label17.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label17.Location = New System.Drawing.Point(231, 723)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(30, 20)
+        Me.Label17.Size = New System.Drawing.Size(39, 25)
         Me.Label17.TabIndex = 18
         Me.Label17.Text = "1K"
         '
@@ -357,7 +357,7 @@ Partial Class frmMain
         Me.Label18.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label18.Location = New System.Drawing.Point(323, 752)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(30, 20)
+        Me.Label18.Size = New System.Drawing.Size(39, 25)
         Me.Label18.TabIndex = 19
         Me.Label18.Text = "2K"
         '
@@ -368,7 +368,7 @@ Partial Class frmMain
         Me.Label19.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label19.Location = New System.Drawing.Point(480, 752)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(49, 20)
+        Me.Label19.Size = New System.Drawing.Size(62, 25)
         Me.Label19.TabIndex = 20
         Me.Label19.Text = "SKIP"
         '
@@ -379,7 +379,7 @@ Partial Class frmMain
         Me.Label20.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label20.Location = New System.Drawing.Point(557, 723)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(30, 20)
+        Me.Label20.Size = New System.Drawing.Size(39, 25)
         Me.Label20.TabIndex = 21
         Me.Label20.Text = "2K"
         '
@@ -390,7 +390,7 @@ Partial Class frmMain
         Me.Label21.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label21.Location = New System.Drawing.Point(681, 624)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(30, 20)
+        Me.Label21.Size = New System.Drawing.Size(39, 25)
         Me.Label21.TabIndex = 22
         Me.Label21.Text = "1K"
         '
@@ -401,7 +401,7 @@ Partial Class frmMain
         Me.Label22.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label22.Location = New System.Drawing.Point(625, 687)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(30, 20)
+        Me.Label22.Size = New System.Drawing.Size(39, 25)
         Me.Label22.TabIndex = 23
         Me.Label22.Text = "1K"
         '
@@ -412,7 +412,7 @@ Partial Class frmMain
         Me.Label23.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label23.Location = New System.Drawing.Point(711, 531)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(49, 20)
+        Me.Label23.Size = New System.Drawing.Size(62, 25)
         Me.Label23.TabIndex = 24
         Me.Label23.Text = "SKIP"
         '
@@ -423,7 +423,7 @@ Partial Class frmMain
         Me.Label24.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label24.Location = New System.Drawing.Point(711, 370)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(49, 20)
+        Me.Label24.Size = New System.Drawing.Size(62, 25)
         Me.Label24.TabIndex = 25
         Me.Label24.Text = "SKIP"
         '
@@ -434,7 +434,7 @@ Partial Class frmMain
         Me.Label25.ForeColor = System.Drawing.Color.DarkGoldenrod
         Me.Label25.Location = New System.Drawing.Point(736, 454)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(30, 20)
+        Me.Label25.Size = New System.Drawing.Size(39, 25)
         Me.Label25.TabIndex = 26
         Me.Label25.Text = "5K"
         '
@@ -443,7 +443,7 @@ Partial Class frmMain
         Me.txtPlay1Guess.Location = New System.Drawing.Point(823, 607)
         Me.txtPlay1Guess.MaxLength = 1
         Me.txtPlay1Guess.Name = "txtPlay1Guess"
-        Me.txtPlay1Guess.Size = New System.Drawing.Size(100, 25)
+        Me.txtPlay1Guess.Size = New System.Drawing.Size(100, 29)
         Me.txtPlay1Guess.TabIndex = 27
         Me.txtPlay1Guess.Visible = False
         '
@@ -451,7 +451,7 @@ Partial Class frmMain
         '
         Me.lblRandWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblRandWord.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRandWord.Location = New System.Drawing.Point(1017, 55)
+        Me.lblRandWord.Location = New System.Drawing.Point(814, 55)
         Me.lblRandWord.Name = "lblRandWord"
         Me.lblRandWord.Size = New System.Drawing.Size(413, 137)
         Me.lblRandWord.TabIndex = 29
@@ -461,11 +461,11 @@ Partial Class frmMain
         'lstRandWords
         '
         Me.lstRandWords.FormattingEnabled = True
-        Me.lstRandWords.ItemHeight = 17
-        Me.lstRandWords.Location = New System.Drawing.Point(823, 692)
+        Me.lstRandWords.ItemHeight = 21
+        Me.lstRandWords.Location = New System.Drawing.Point(997, 580)
         Me.lstRandWords.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.lstRandWords.Name = "lstRandWords"
-        Me.lstRandWords.Size = New System.Drawing.Size(159, 123)
+        Me.lstRandWords.Size = New System.Drawing.Size(159, 109)
         Me.lstRandWords.TabIndex = 30
         Me.lstRandWords.Visible = False
         '
@@ -481,11 +481,12 @@ Partial Class frmMain
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 3, 0, 3)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1827, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1631, 30)
         Me.MenuStrip1.TabIndex = 32
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -493,13 +494,13 @@ Partial Class frmMain
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuLoad})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 19)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'menuLoad
         '
         Me.menuLoad.Name = "menuLoad"
-        Me.menuLoad.Size = New System.Drawing.Size(100, 22)
+        Me.menuLoad.Size = New System.Drawing.Size(125, 26)
         Me.menuLoad.Text = "Load"
         '
         'btnA
@@ -842,7 +843,7 @@ Partial Class frmMain
         Me.grpLetters.Controls.Add(Me.btnH)
         Me.grpLetters.Controls.Add(Me.btnJ)
         Me.grpLetters.Controls.Add(Me.btnI)
-        Me.grpLetters.Location = New System.Drawing.Point(1045, 415)
+        Me.grpLetters.Location = New System.Drawing.Point(844, 407)
         Me.grpLetters.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.grpLetters.Name = "grpLetters"
         Me.grpLetters.Padding = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -857,7 +858,7 @@ Partial Class frmMain
         Me.lblPlay1Score.Location = New System.Drawing.Point(840, 260)
         Me.lblPlay1Score.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPlay1Score.Name = "lblPlay1Score"
-        Me.lblPlay1Score.Size = New System.Drawing.Size(60, 17)
+        Me.lblPlay1Score.Size = New System.Drawing.Size(79, 23)
         Me.lblPlay1Score.TabIndex = 60
         Me.lblPlay1Score.Text = "P1 Score"
         '
@@ -866,11 +867,11 @@ Partial Class frmMain
         Me.picWheel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picWheel.Image = Global.Wheel_of_Fortune_Capstone_Project.My.Resources.Resources.wheel22
-        Me.picWheel.Location = New System.Drawing.Point(27, 60)
+        Me.picWheel.Image = Global.Wheel_of_Fortune_Capstone_Project.My.Resources.Resources.wheel14
+        Me.picWheel.Location = New System.Drawing.Point(46, 80)
         Me.picWheel.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.picWheel.Name = "picWheel"
-        Me.picWheel.Size = New System.Drawing.Size(779, 761)
+        Me.picWheel.Size = New System.Drawing.Size(813, 756)
         Me.picWheel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picWheel.TabIndex = 0
         Me.picWheel.TabStop = False
@@ -889,10 +890,10 @@ Partial Class frmMain
         '
         Me.lblPlayerOneTitle.AutoSize = True
         Me.lblPlayerOneTitle.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayerOneTitle.Location = New System.Drawing.Point(5, 17)
+        Me.lblPlayerOneTitle.Location = New System.Drawing.Point(-6, 19)
         Me.lblPlayerOneTitle.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPlayerOneTitle.Name = "lblPlayerOneTitle"
-        Me.lblPlayerOneTitle.Size = New System.Drawing.Size(113, 25)
+        Me.lblPlayerOneTitle.Size = New System.Drawing.Size(145, 32)
         Me.lblPlayerOneTitle.TabIndex = 62
         Me.lblPlayerOneTitle.Text = "Player One:"
         '
@@ -903,7 +904,7 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.radInactive)
         Me.GroupBox1.Controls.Add(Me.lblPlayerOneTitle)
         Me.GroupBox1.Controls.Add(Me.lblPlayerOneScore)
-        Me.GroupBox1.Location = New System.Drawing.Point(1503, 55)
+        Me.GroupBox1.Location = New System.Drawing.Point(1254, 4)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -917,7 +918,7 @@ Partial Class frmMain
         Me.radActive.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radActive.Location = New System.Drawing.Point(117, 21)
         Me.radActive.Name = "radActive"
-        Me.radActive.Size = New System.Drawing.Size(64, 21)
+        Me.radActive.Size = New System.Drawing.Size(81, 27)
         Me.radActive.TabIndex = 65
         Me.radActive.TabStop = True
         Me.radActive.Text = "Active"
@@ -928,7 +929,7 @@ Partial Class frmMain
         Me.radInactive.AutoSize = True
         Me.radInactive.Location = New System.Drawing.Point(181, 21)
         Me.radInactive.Name = "radInactive"
-        Me.radInactive.Size = New System.Drawing.Size(74, 21)
+        Me.radInactive.Size = New System.Drawing.Size(93, 27)
         Me.radInactive.TabIndex = 64
         Me.radInactive.TabStop = True
         Me.radInactive.Text = "Inactive"
@@ -941,7 +942,7 @@ Partial Class frmMain
         Me.GroupBox2.Controls.Add(Me.radInactiveTwo)
         Me.GroupBox2.Controls.Add(Me.lblPlayerTwoTitle)
         Me.GroupBox2.Controls.Add(Me.lblPlayerTwoScore)
-        Me.GroupBox2.Location = New System.Drawing.Point(1503, 274)
+        Me.GroupBox2.Location = New System.Drawing.Point(1254, 192)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -955,7 +956,7 @@ Partial Class frmMain
         Me.radActiveTwo.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radActiveTwo.Location = New System.Drawing.Point(117, 21)
         Me.radActiveTwo.Name = "radActiveTwo"
-        Me.radActiveTwo.Size = New System.Drawing.Size(64, 21)
+        Me.radActiveTwo.Size = New System.Drawing.Size(81, 27)
         Me.radActiveTwo.TabIndex = 65
         Me.radActiveTwo.TabStop = True
         Me.radActiveTwo.Text = "Active"
@@ -966,7 +967,7 @@ Partial Class frmMain
         Me.radInactiveTwo.AutoSize = True
         Me.radInactiveTwo.Location = New System.Drawing.Point(181, 21)
         Me.radInactiveTwo.Name = "radInactiveTwo"
-        Me.radInactiveTwo.Size = New System.Drawing.Size(74, 21)
+        Me.radInactiveTwo.Size = New System.Drawing.Size(93, 27)
         Me.radInactiveTwo.TabIndex = 64
         Me.radInactiveTwo.TabStop = True
         Me.radInactiveTwo.Text = "Inactive"
@@ -979,7 +980,7 @@ Partial Class frmMain
         Me.lblPlayerTwoTitle.Location = New System.Drawing.Point(5, 17)
         Me.lblPlayerTwoTitle.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPlayerTwoTitle.Name = "lblPlayerTwoTitle"
-        Me.lblPlayerTwoTitle.Size = New System.Drawing.Size(114, 25)
+        Me.lblPlayerTwoTitle.Size = New System.Drawing.Size(146, 32)
         Me.lblPlayerTwoTitle.TabIndex = 62
         Me.lblPlayerTwoTitle.Text = "Player Two:"
         '
@@ -999,7 +1000,7 @@ Partial Class frmMain
         Me.GroupBox3.Controls.Add(Me.radInactiveThree)
         Me.GroupBox3.Controls.Add(Me.lblPlayerThreeTitle)
         Me.GroupBox3.Controls.Add(Me.lblPlayerThreeScore)
-        Me.GroupBox3.Location = New System.Drawing.Point(1503, 483)
+        Me.GroupBox3.Location = New System.Drawing.Point(1254, 380)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -1013,7 +1014,7 @@ Partial Class frmMain
         Me.radActiveThree.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radActiveThree.Location = New System.Drawing.Point(111, 21)
         Me.radActiveThree.Name = "radActiveThree"
-        Me.radActiveThree.Size = New System.Drawing.Size(64, 21)
+        Me.radActiveThree.Size = New System.Drawing.Size(81, 27)
         Me.radActiveThree.TabIndex = 65
         Me.radActiveThree.TabStop = True
         Me.radActiveThree.Text = "Active"
@@ -1024,7 +1025,7 @@ Partial Class frmMain
         Me.radInactiveThree.AutoSize = True
         Me.radInactiveThree.Location = New System.Drawing.Point(181, 21)
         Me.radInactiveThree.Name = "radInactiveThree"
-        Me.radInactiveThree.Size = New System.Drawing.Size(74, 21)
+        Me.radInactiveThree.Size = New System.Drawing.Size(93, 27)
         Me.radInactiveThree.TabIndex = 64
         Me.radInactiveThree.TabStop = True
         Me.radInactiveThree.Text = "Inactive"
@@ -1037,7 +1038,7 @@ Partial Class frmMain
         Me.lblPlayerThreeTitle.Location = New System.Drawing.Point(6, 20)
         Me.lblPlayerThreeTitle.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblPlayerThreeTitle.Name = "lblPlayerThreeTitle"
-        Me.lblPlayerThreeTitle.Size = New System.Drawing.Size(109, 21)
+        Me.lblPlayerThreeTitle.Size = New System.Drawing.Size(136, 28)
         Me.lblPlayerThreeTitle.TabIndex = 62
         Me.lblPlayerThreeTitle.Text = "Player Three:"
         '
@@ -1057,7 +1058,7 @@ Partial Class frmMain
         Me.GroupBox4.Controls.Add(Me.radInactiveFour)
         Me.GroupBox4.Controls.Add(Me.Label30)
         Me.GroupBox4.Controls.Add(Me.lblPlayerFourScore)
-        Me.GroupBox4.Location = New System.Drawing.Point(1503, 687)
+        Me.GroupBox4.Location = New System.Drawing.Point(1254, 568)
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Padding = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -1071,7 +1072,7 @@ Partial Class frmMain
         Me.radActiveFour.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radActiveFour.Location = New System.Drawing.Point(117, 21)
         Me.radActiveFour.Name = "radActiveFour"
-        Me.radActiveFour.Size = New System.Drawing.Size(64, 21)
+        Me.radActiveFour.Size = New System.Drawing.Size(81, 27)
         Me.radActiveFour.TabIndex = 65
         Me.radActiveFour.TabStop = True
         Me.radActiveFour.Text = "Active"
@@ -1082,7 +1083,7 @@ Partial Class frmMain
         Me.radInactiveFour.AutoSize = True
         Me.radInactiveFour.Location = New System.Drawing.Point(181, 21)
         Me.radInactiveFour.Name = "radInactiveFour"
-        Me.radInactiveFour.Size = New System.Drawing.Size(74, 21)
+        Me.radInactiveFour.Size = New System.Drawing.Size(93, 27)
         Me.radInactiveFour.TabIndex = 64
         Me.radInactiveFour.TabStop = True
         Me.radInactiveFour.Text = "Inactive"
@@ -1092,10 +1093,10 @@ Partial Class frmMain
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(14, 20)
+        Me.Label30.Location = New System.Drawing.Point(6, 20)
         Me.Label30.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(101, 21)
+        Me.Label30.Size = New System.Drawing.Size(125, 28)
         Me.Label30.TabIndex = 62
         Me.Label30.Text = "Player Four:"
         '
@@ -1110,9 +1111,9 @@ Partial Class frmMain
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1827, 901)
+        Me.ClientSize = New System.Drawing.Size(1631, 887)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -1154,6 +1155,7 @@ Partial Class frmMain
         Me.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.Text = "Wheel of Fortune"
         Me.MenuStrip1.ResumeLayout(False)

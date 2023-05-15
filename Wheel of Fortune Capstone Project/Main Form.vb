@@ -23,7 +23,12 @@ Public Class frmMain
     Dim ActivePlayer As Integer
     Dim intScoreCurrent1 As Integer
     Dim intScoreCounter As Integer
-    
+
+
+    Dim intScoreCounterTwo As Integer
+    Dim intScoreCounterThree As Integer
+    Dim intScoreCounterFour As Integer
+    Dim intScoreCounterTotal As Integer
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picWheel.Image = WheelImages.Images(0)
@@ -36,6 +41,7 @@ Public Class frmMain
     End Sub
 
     Private Async Sub btnSpin_Click(sender As Object, e As EventArgs) Handles btnSpin.Click
+        Randomize()
         result = CInt((24 * Rnd()) + 1)
         Timer1.Start()
         wheelspeed = 20
@@ -72,6 +78,15 @@ Public Class frmMain
                         intScoreCurrent1 += 5000
                     Case Is = 5, 12, 15, 21, 22
                         intScoreCurrent1 += 2000
+                    Case Is = 19, 17, 7, 9, 13
+                        If radActive.Checked = True Then
+                            radInactive.Checked = True
+                        End If
+
+                        If radActiveTwo.Checked Then
+                            radInactiveTwo.Checked = True
+                        End If
+
                     Case Else
                         intScoreCurrent1 += 1000
                 End Select
@@ -138,10 +153,7 @@ Public Class frmMain
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click, btnB.Click, btnC.Click, btnD.Click, btnE.Click, btnF.Click, btnG.Click, btnH.Click, btnI.Click, btnJ.Click, btnK.Click, btnL.Click, btnM.Click, btnN.Click, btnO.Click, btnP.Click, btnQ.Click, btnR.Click, btnS.Click, btnT.Click, btnU.Click, btnV.Click, btnW.Click, btnX.Click, btnY.Click, btnZ.Click
         Dim guessedLetter As Button = DirectCast(sender, Button)
-        Dim intScoreCounterTwo As Integer
-        Dim intScoreCounterThree As Integer
-        Dim intScoreCounterFour As Integer
-        Dim intScoreCountersum As Integer
+
 
         If ranWord.Contains(guessedLetter.Text) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
@@ -172,55 +184,54 @@ Public Class frmMain
         If radActive.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
             intScoreCounter += intScoreCurrent1
             lblPlayerOneScore.Text = intScoreCounter.ToString
-            MsgBox("PLayer One Active")
 
-        ElseIf guessedLetter.BackColor = Color.Red Then
-            radInactive.Checked = True
+
+        ElseIf radInactive.Checked = True AndAlso guessedLetter.BackColor = Color.Red Then
             intScoreCounter += 0
             lblPlayerOneScore.Text = intScoreCounter.ToString
         End If
 
-        'Player Two Score Tracker
+        ''Player Two Score Tracker
         If radActiveTwo.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
             intScoreCounterTwo += intScoreCurrent1
-            lblPlayerTwoScore.Text = intScoreCounterTwo.ToString
-            MsgBox("Player Two Active")
 
-        ElseIf guessedLetter.BackColor = Color.Red Then
-            radInactiveTwo.Checked = True
+            lblPlayerTwoScore.Text = intScoreCounterTwo.ToString
+
+
+        ElseIf radInactiveTwo.Checked = True AndAlso guessedLetter.BackColor = Color.Red Then
             intScoreCounterTwo += 0
             lblPlayerTwoScore.Text = intScoreCounterTwo.ToString
 
         End If
 
 
-        'Player Three Score Tracker
-        If radActiveThree.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
-            intScoreCounterThree += intScoreCurrent1
-            lblPlayerThreeScore.Text = intScoreCounterThree.ToString
-            MsgBox("Player Three Active")
+        '''Player Three Score Tracker
+        ''If radActiveThree.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
+        'intScoreCounterThree += intScoreCurrent1
+        '    lblPlayerThreeScore.Text = intScoreCounterThree.ToString
+        '    MsgBox("Player Three Active")
 
-        ElseIf guessedLetter.BackColor = Color.Red Then
-            radInactiveThree.Checked = True
-            intScoreCounterThree += 0
-            lblPlayerThreeScore.Text = intScoreCounterThree.ToString
+        'ElseIf guessedLetter.BackColor = Color.Red Then
+        '    radInactiveThree.Checked = True
+        '    intScoreCounterThree += 0
+        '    lblPlayerThreeScore.Text = intScoreCounterThree.ToString
 
-        End If
-        intScoreCounter = 0
+        'End If
+        'intScoreCounter = 0
 
-        'Player Four Score Tracker
-        If radActiveFour.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
-            intScoreCounterFour += intScoreCurrent1
-            lblPlayerFourScore.Text = intScoreCounterFour.ToString
-            MsgBox("Player Four Active")
+        ''Player Four Score Tracker
+        'If radActiveFour.Checked = True AndAlso guessedLetter.BackColor = Color.Lime Then
+        '    intScoreCounterFour += intScoreCurrent1
+        '    lblPlayerFourScore.Text = intScoreCounterFour.ToString
+        '    MsgBox("Player Four Active")
 
-        ElseIf guessedLetter.BackColor = Color.Red Then
-            radInactiveFour.Checked = True
-            intScoreCounterFour += 0
-            lblPlayerFourScore.Text = intScoreCounterFour.ToString
+        'ElseIf guessedLetter.BackColor = Color.Red Then
+        '    radInactiveFour.Checked = True
+        '    intScoreCounterFour += 0
+        '    lblPlayerFourScore.Text = intScoreCounterFour.ToString
 
-        End If
-        intScoreCounter = 0
+        'End If
+        'intScoreCounter = 0
 
     End Sub
 
